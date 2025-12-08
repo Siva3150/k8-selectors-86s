@@ -21,8 +21,8 @@ spec:
         purpose: taints-tolerations
         project: roboshop
     spec:
-      # nodeSelector:
-      #   kubernetes.io/hostname: ip-192-168-25-152.ec2.internal
+      nodeSelector:
+        kubernetes.io/hostname: ip-192-168-25-152.ec2.internal
       containers:
       - name: nginx
         image: nginx:latest
