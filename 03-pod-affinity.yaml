@@ -5,14 +5,14 @@ metadata:
 spec:
   affinity:
     nodeAffinity:
-      # hard rule
-      # requiredDuringSchedulingIgnoredDuringExecution:
-      #   nodeSelectorTerms:
-      #   - matchExpressions:
-      #     - key: topology.kubernetes.io/zone
-      #       operator: In
-      #       values:
-      #       - us-east-1b
+      #hard rule
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: topology.kubernetes.io/zone
+            operator: In
+            values:
+            - us-east-1b
           # - key: disktype
           #   operator: In
           #   values:
